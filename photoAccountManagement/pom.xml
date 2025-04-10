@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.majesty</groupId>
-	<artifactId>photoAppApiUsers</artifactId>
+	<artifactId>photoAccountManagement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>photoAppApiUsers</name>
-	<description>Users Microservices </description>
+	<name>photoAccountManagement</name>
+	<description>Account management MS Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -72,16 +72,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-compiler-plugin</artifactId>
-    <version>3.13.0</version>
-    <configuration>
-        <source>${java.version}</source>
-        <target>${java.version}</target>
-        <release>${java.version}</release> <!-- Ensures compatibility with Java 21 -->
-    </configuration>
-</plugin>
 
 </project>
