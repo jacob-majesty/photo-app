@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import com.majesty.photoAppApiUsers.data.AlbumsServiceClient;
+import com.majesty.photoAppApiUsers.data.UserEntity;
+import com.majesty.photoAppApiUsers.data.UsersRepository;
 import com.majesty.photoAppApiUsers.shared.UserDto;
+import com.majesty.photoAppApiUsers.ui.model.AlbumResponseModel;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.slf4j.Logger;
@@ -60,9 +64,7 @@ public class UsersServiceImpl implements UsersService {
 
         usersRepository.save(userEntity);
 
-        UserDto returnValue = modelMapper.map(userEntity, UserDto.class);
-
-        return returnValue;
+        return modelMapper.map(userEntity, UserDto.class);
     }
 
     @Override
